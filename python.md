@@ -1,3 +1,8 @@
+> Course website (this) and GitHub are new and still under construction. Please bear with us and notify us of any issues/suggestions.
+
+| [Discussions](https://github.com/orgs/uiuc-cs448/discussions) | [Canvas](https://canvas.illinois.edu/courses/52926) | [Repositories](https://github.com/orgs/uiuc-cs448/repositories) | [Python Setup](https://uiuc-cs448.github.io/python) |
+| ------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------- |
+
 # Python Setup
 
 > This reference is written by a CA who doesn't know everything. Some information can be wrong or incomplete, but that's what Google is for:)
@@ -41,7 +46,7 @@ Yay, you chose the right door!
 
 ## Installing Dependencies
 
-We listed dependencies in each lab repo as a `requirements.txt` file. You can just `pip install -r requirements.txt` and call it a day if you are going global, but if you want to manage a deedicated environment, ensure you're in it first.
+We listed dependencies in each lab repo as a `requirements.txt` file. You can just `pip install -r requirements.txt` and call it a day if you are going global, but if you are managing a dedicated environment, ensure you're in it first.
 
 - If you are going global, then just run the above command in the lab dir. All labs share basically the same dependencies, so you usually don't need to do this again.
 - If you are using `venv`-s, etc., consult their documentation. Usually you need to "enter" and environment through your terminal then run `pip`/`conda` in that environment to isolate those dependencies. All your labs can use the same dedicated environment since they share the same dependencies.
