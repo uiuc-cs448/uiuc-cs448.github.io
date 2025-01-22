@@ -46,7 +46,7 @@ We understand that students might have private questions that they don’t want 
 
 # Python Setup
 
-> Quinn wrote most of this, read with caution in case he's spouting bs.
+![](images/python.png)
 
 There are multiple ways to install and manage Python and the dependencies/libraries you will need for the labs (Jupyter notebooks). Choose your own adventure!
 
@@ -79,8 +79,6 @@ If you're on Mac, you could use what macOS preinstalls in /usr/local/bin/, but w
 
 ### Multiple
 
-Yay, you chose the right door!
-
 - venv (the other options, this comes native with Python): manage separate environments for dependencies but share the same global Python that you installed from above. Requires a few commands that you can memorize/automate/shortcut.
 - pyenv with pyenv-virtualenv: pyenv simultaneously maintains multiple Python versions so you can switch between them and pyenv-virtualenv extends it as a wrapper around venv management (Quinn likes the Real Python guide).
 - conda: switch between different environments that also each contain a Python version, unlike pyenv which lets you share a Python version across different venvs (Quinn might be wrong here, he rarely uses conda).
@@ -99,5 +97,3 @@ Once you clone and open your lab in your favorite IDE, set it up to run Jupyter 
 - VSCode: Install the ms-toolsai.jupyter extension, then click Select Kernel → Python Environments... → Python 3.X /path/to/python/from/(2).
 - JupyterLab (dedicated offline in-browser IDE): Run jupyter lab in the terminal at the repo level, which opens the IDE (http://localhost:...)
 - Others (e.g. PyCharm, Spyder): you may need to run jupyter server --no-browser --NotebookApp.alloworigin="\*" in the terminal and copy-paste that local server URL into the IDE settings. Follow platform-specific instructions.
-
-> i am sleepy hopefully these docs aren't horrid ok time to twarp
