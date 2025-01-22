@@ -1,19 +1,12 @@
 > Website, etc. is new and still under construction. Please bear with us and notify us of any issues/suggestions. **Beware that some information may be on the syllabus or day-1 lecture slides on Canvas instead.**
 
-## Quicklinks
+### Quicklinks: [Discussions](https://github.com/orgs/uiuc-cs448/discussions) [Canvas](https://canvas.illinois.edu/courses/52926) [Repositories](https://github.com/orgs/uiuc-cs448/repositories) [Python](https://uiuc-cs448.github.io/python)
 
-- [GitHub Discussions](https://github.com/orgs/uiuc-cs448/discussions)
-- [Canvas](https://canvas.illinois.edu/courses/52926)
-- [GitHub Repositories](https://github.com/orgs/uiuc-cs448/repositories)
-- [Python Setup](https://uiuc-cs448.github.io/python)
+---
 
-## Welcome
+Welcome to the homepage of CS 448, the Audio Computing Lab, for Spring 2025! We use GitHub (via GitHub Classroom) and Canvas:
 
-Welcome to the homepage of CS 448, the Audio Computing Lab, for Spring 2025!
-
-We use GitHub (via GitHub Classroom) and Canvas.
-
-- GitHub: assignments/labs, discussions, and everything else that isn't on Canvas. You need to accept an invitation link (via email or Canvas?) to have access.
+- GitHub: assignments/labs, discussions, and everything else that isn't on Canvas. You need to accept an invitation link (via Canvas announcement) to have access.
 - Canvas: syllabus, lecture slides, and grades. You should automatically have access after registering for the course.
 
 ![](images/a.png)
@@ -22,6 +15,8 @@ _GitHub Organization (overview page)_
 ![](images/b.png)
 _Canvas (syllabus page)_
 
+---
+
 # Assignments
 
 > **⚠️ WARNING:** Do not make pull requests (PRs) in your assignment repos! These requests will make your code from an otherwise-private repo visible to the entire class and **submitting public code is a FAIR violation**. (It's a dumb GitHub bug, not a feature.)
@@ -29,9 +24,6 @@ _Canvas (syllabus page)_
 ### Access Repositories
 
 Each assignment/lab comes as a repo that we release in sequence to you via a link that you need to accept. Accepting that link creates your own private fork of that repo. Only you and course staff can see and edit these.
-
-![](images/join.png)
-_Onboarding page when you accept the first lab–select only your NetID please!_
 
 ![](images/accepted.png)
 _Confirmation page of receiving your own lab repo as a fork_
