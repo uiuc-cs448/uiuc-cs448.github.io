@@ -30,6 +30,12 @@ _Canvas (syllabus page)_
 
 Each assignment/lab comes as a repo that we release in sequence to you via a link that you need to accept. Accepting that link creates your own private fork of that repo. Only you and course staff can see and edit these.
 
+![](images/join.png)
+_Onboarding page when you accept the first lab–select only your NetID please!_
+
+![](images/accepted.png)
+_Confirmation page of receiving your own lab repo as a fork_
+
 ### Deadlines
 
 We release a lab approximately once per week which is then due about two weeks after that (check your repo for specific deadlines). You lose write access to a lab once the deadline arrives so make sure you commit and push everything by then!
