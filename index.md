@@ -1,14 +1,14 @@
 Welcome to Audio Computing Lab! We will be using GitHub Classroom to host our assignments and online discussions. You will receive an invitation to join the GitHub Classroom, which will give you access to all assignments during the semester. You will also receive an invitation to join the course’s GitHub organization page, which is where all online discussion will take place.
 
-![](a.png)
+![](images/a.png)
 
 Lastly, lecture slides are available through modules on the Canvas page, along with the course syllabus and your lab grades. You really only need Canvas to check on grades and download lecture slides- everything else can be found through the GitHub organization and Classroom.
 
-![](b.png)
+![](images/b.png)
 
 ## Assignments
 
-![](c.png)
+![](images/c.png)
 
 To access assignments, visit GitHub Classroom and checkout the available labs. If you’ve worked with GitHub repos before and have a preferred IDE, working on labs will feel familiar. You will be provided your own repository of the lab, and your most recent push to this repository will be your “submission” for the lab. As for completing the labs, you will need a local installation of Python to properly run a number of the labs. 
 
@@ -24,7 +24,7 @@ The course staff understands that surprises happen, and sometimes students need 
 
 ## Public Discussions
 
-![](d.png)
+![](images/d.png)
 
 All public discussions will take place in our organization page under Discussions. This is also where we’ll post course announcements, so make sure to keep notifications on for these! 
 
