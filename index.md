@@ -3,16 +3,14 @@
 | [Discussions](https://github.com/orgs/uiuc-cs448/discussions) | [Canvas](https://canvas.illinois.edu/courses/52926) | [Repositories](https://github.com/orgs/uiuc-cs448/repositories) | [Python Setup](https://uiuc-cs448.github.io/python) |
 | ------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------- |
 
-Welcome to the homepage of CS 448, the Audio Computing Lab, for Spring 2025! We use GitHub (via GitHub Classroom) and Canvas:
+Welcome to the homepage of CS 448 – Audio Computing Lab for Spring 2025! Here's a rundown of what online surfaces you'll use:
 
-- GitHub: assignments/labs, discussions, and everything else that isn't on Canvas. You need to accept an invitation link (via Canvas announcement) to have access.
-- Canvas: syllabus, lecture slides, and grades. You should automatically have access after registering for the course.
+- **GitHub**: assignments/labs, discussions, this homepage, etc. You need to accept an invitation link (via the Canvas announcement) to have access to assignments and discussions.
+- **Canvas**: syllabus, lecture slides, and grades. You should automatically have access after registering for the course.
 
-![](images/a.png)
-_GitHub Organization (overview page)_
-
-![](images/b.png)
-_Canvas (syllabus page)_
+| ![](images/a.png)                     | ![](images/b.png)        |
+| ------------------------------------- | ------------------------ |
+| _GitHub Organization (overview page)_ | _Canvas (syllabus page)_ |
 
 ---
 
