@@ -1,6 +1,9 @@
 # Python Setup
 
-> This reference is written by an eepy course staff who doesn't know everything. Some information can be wrong or incomplete, but that's what Google is for:)
+> This reference is written by a CA who doesn't know everything. Some information can be wrong or incomplete, but that's what Google is for:)
+
+![](images/python.png)
+_Necessary [XKCD comic](https://xkcd.com/1987/)_
 
 There are _many_ ways to setup a Python environment and dealing with it can be [a pain in the ass](https://xkcd.com/1987/). Fortunately, this class isn’t too picky beyond having Python 3.9+ with a few dependencies/libraries. If you already have an existing Python setup that you like, you can probably skip to installing dependencies.
 
@@ -14,7 +17,7 @@ There are _many_ ways to setup a Python environment and dealing with it can be [
 
 Choose between:
 
-- A global environment: Every project on your computer shares one Python version and uses the same set of dependencies. This is easy to start with but hard to maintain as projects require conflicting versions of dependencies.****
+- A global environment: Every project on your computer shares one Python version and uses the same set of dependencies. This is easy to start with but hard to maintain as projects require conflicting versions of dependencies.\*\*\*\*
 - Multiple environments: Each project can access a dedicated, isolated set of dependencies or even specific Python version. Useful to learn if you often work with Python.
 
 ### Global
@@ -38,15 +41,15 @@ Yay, you chose the right door!
 
 ## Installing Dependencies
 
-You can just pip install -r requirements.txt and call it a day, but you risk dumping and forgetting about them until a different Python project wants a different dependency version or your disk is full.
+We listed dependencies in each lab repo as a `requirements.txt` file. You can just `pip install -r requirements.txt` and call it a day if you are going global, but if you want to manage a deedicated environment, ensure you're in it first.
 
 - If you are going global, then just run the above command in the lab dir. All labs share basically the same dependencies, so you usually don't need to do this again.
-- If you are using venv-s, etc., consult their documentation. Usually you need to "enter" and environment through your terminal then run pip/conda in that environment to isolate those dependencies.
+- If you are using `venv`-s, etc., consult their documentation. Usually you need to "enter" and environment through your terminal then run `pip`/`conda` in that environment to isolate those dependencies. All your labs can use the same dedicated environment since they share the same dependencies.
 
 ## IDEs!
 
 Once you clone and open your lab in your favorite IDE, set it up to run Jupyter notebooks. Some popular ones:
 
-- VSCode: Install the ms-toolsai.jupyter extension, then click Select Kernel → Python Environments... → Python 3.X /path/to/python/from/(2).
-- JupyterLab (dedicated offline in-browser IDE): Run jupyter lab in the terminal at the repo level, which opens the IDE (http://localhost:...)
-- Others (e.g. PyCharm, Spyder): you may need to run jupyter server --no-browser --NotebookApp.alloworigin="\*" in the terminal and copy-paste that local server URL into the IDE settings. Follow platform-specific instructions.
+- [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks): Install the `ms-toolsai.jupyter` extension, then click `Select Kernel` → `Python Environments...` → `Python 3.X /path/to/python/hopefully`.
+- [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html) (dedicated offline in-browser IDE): Run `jupyter lab` in the terminal at the repo level, which opens the IDE (`http://localhost:...`)
+- Others (e.g. [PyCharm](https://www.jetbrains.com/help/pycharm/configuring-jupyter-notebook.html), [Spyder](https://docs.spyder-ide.org/current/plugins/notebook.html)): you may need to run `jupyter server --no-browser --NotebookApp.alloworigin="\*"` in the terminal and copy-paste that local server URL into the IDE settings. Follow platform-specific instructions.
