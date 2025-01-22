@@ -1,0 +1,25 @@
+name: Onboard students
+
+on:
+  workflow_dispatch:
+  organization:
+    types: [outside_collaborator_added]
+
+permissions:
+  organization: write
+
+jobs:
+  sync-team:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invite outside collaborator(s) to be a team member
+        env:
+          TEAM: ${{ val.STUDENT_TEAM }}
+        run: |
+          if [ "${{ github.event_name }}" = "organization" ]; then
+            gh api -X PUT /orgs/${{ github.repository_owner }}/teams/$TEAM/memberships/${{ github.event.membership.user.login }}
+          else
+            gh api -X GET /orgs/${{ github.repository_owner }}/outside_collaborators --paginate | \
+            jq -r '.[].login' | \
+            xargs -I {} gh api -X PUT /orgs/${{ github.repository_owner }}/teams/$TEAM/memberships/{}
+          fi
