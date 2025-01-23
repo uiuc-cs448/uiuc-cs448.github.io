@@ -3,8 +3,7 @@
 | [Discussions](https://github.com/orgs/uiuc-cs448/discussions) | [Canvas](https://canvas.illinois.edu/courses/52926) | [Repositories](https://github.com/orgs/uiuc-cs448/repositories) | [Python Setup](https://uiuc-cs448.github.io/python) |
 | ------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------- |
 
-> [!NOTE]
-> This website focuses on the **online platforms** of this course to help you onboard. Refer to the syllabus, day-1 lecture slides, announcements, etc. on Canvas for complete coverage on everything else.
+> ℹ️ This website focuses on the **online platforms** of this course to help you onboard. Refer to the syllabus, day-1 lecture slides, announcements, etc. on Canvas for complete coverage on everything else.
 
 Welcome to the website of CS 448 – Audio Computing Laboratory for Spring 2025! Here's a summary of what you'll use:
 
@@ -17,8 +16,7 @@ Welcome to the website of CS 448 – Audio Computing Laboratory for Spring 2025!
 
 # Assignments
 
-> [!CAUTION]
-> Do not make pull requests (PRs) in your assignment repos! These requests will make your code from an otherwise-private repo visible to the entire class and **submitting public code is a FAIR violation**. (It's a dumb GitHub bug.)
+> ⚠️ Do not make pull requests (PRs) in your assignment repos! These requests will make your code from an otherwise-private repo visible to the entire class and **submitting public code is a FAIR violation**. (It's a dumb GitHub bug.)
 
 ### Access Repositories
 
@@ -33,8 +31,7 @@ _Confirmation page of receiving your own lab repo as a fork_
 
 You lose write access to a lab once its deadline arrives, so ensure you commit and push everything by then!
 
-> [!WARNING]
-> GitHub does not accept late work/commits, so we grade only what the repo has by the deadline (no "late credit"). However, we understand that circumstances happen so if you believe you should have an extension, [please ask](https://uiuc-cs448.github.io/#private-questionscontact)!
+> ℹ️ GitHub does not accept late work/commits, so we grade only what the repo has by the deadline (no "late credit"). However, we understand that circumstances happen so if you believe you should have an extension, [please ask](https://uiuc-cs448.github.io/#private-questionscontact)!
 
 ### Grades
 
@@ -44,8 +41,7 @@ Course staff manually grades each lab via a commit to your notebook. We evaluate
 
 All course discussions/communications will take place in [GitHub Discussions](https://github.com/orgs/uiuc-cs448/discussions). This includes important course announcements so [configure your notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#about-custom-notifications)! Posts/comments can include $LaTeX$, plots, audio, etc. but **not non-trivial code** for exchanging help about labs, course content, etc. **Go wild! 🎉**
 
-> [!IMPORTANT]
-> When attaching an audio file, change the extension to `.mov` before uploading. Otherwise, it won't play! (It's a dumb GitHub bug.)
+> ℹ️ When attaching an audio file, change the extension to `.mov` before uploading. Otherwise, it won't play! (It's a dumb GitHub bug.)
 
 ## Private Questions/Contact
 
@@ -69,5 +65,4 @@ If emailing the instructor (`paris@illinois.edu`), please also CC at least one a
 
 Before/after lecture or lab, etc. Just ask us for a private space and time to speak!
 
-> [!NOTE]
-> Prefer contacting assistants for most assignment grading/extension or technical platform issues. Prefer contacting the instructor for adminstative tasks, emergencies, etc. (but please still tag/CC an assistant!)
+> ℹ️ Prefer contacting assistants for most assignment grading/extension or technical platform issues. Prefer contacting the instructor for adminstative tasks, emergencies, etc. (but please still tag/CC an assistant!)
