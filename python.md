@@ -50,7 +50,7 @@ Mac preinstalls a system-dependent version of Python in `/usr/local/bin/`, but w
 
 Each lab requires the same dependencies, which we listed in the `requirements.txt` file of each repo. So if you're using a dedicated environment, you can use the same one for each lab.
 
-For most cases (and once you enter the dedicated environment), run `pip install -r requirements.txt` at the repo level to install dependencies using the `pip` Python package manager. Beware that some previous options recommend a different package manager, e.g. `conda install --yes --file requirements.txt`.
+For most cases (and once you enter your dedicated environment, if not defaulting to a global one), run `pip install -r requirements.txt` at the repo level to install dependencies using the `pip` Python package manager. Beware that some previous options recommend a different package manager, e.g. `conda install --yes --file requirements.txt`.
 
 ## IDEs!
 
