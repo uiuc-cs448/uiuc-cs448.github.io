@@ -1,7 +1,11 @@
 name: Onboard students
 
 on:
-  - workflow_dispatch
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0,6,12,16 21-31 1,8 1-5" # Four times per weekday on approximately the start of each semester
+
+permissions: write-all
 
 jobs:
   sync-team:
@@ -9,12 +13,9 @@ jobs:
     steps:
       - name: Invite outside collaborator(s) to be a team member
         env:
+          ORG: ${{ github.repository_owner }}
           TEAM: ${{ vars.STUDENT_TEAM }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ "${{ github.event_name }}" = "organization" ]; then
-            gh api -X PUT /orgs/${{ github.repository_owner }}/teams/$TEAM/memberships/${{ github.event.membership.user.login }}
-          else
-            gh api -X GET /orgs/${{ github.repository_owner }}/outside_collaborators --paginate | \
-            jq -r '.[].login' | \
-            xargs -I {} gh api -X PUT /orgs/${{ github.repository_owner }}/teams/$TEAM/memberships/{}
-          fi
+          gh api \
+            /orgs/$ORG/outside_collaborators --paginate
