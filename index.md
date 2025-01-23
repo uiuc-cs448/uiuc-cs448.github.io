@@ -10,9 +10,9 @@ Welcome to the website of CS 448 – Audio Computing Laboratory for Spring 2025!
 - **GitHub** for assignments/labs and discussions. You need to accept a internal invitation link (via the Canvas announcement) to have access.
 - **Canvas** for the syllabus, lecture slides, and grades. You should automatically have access after registering for the course.
 
-| ![](images/d.png)         | ![](images/b.png)      |
-| ------------------------- | ---------------------- |
-| _GitHub Discussions page_ | _Canvas syllabus page_ |
+| ![](images/discussions.png) | ![](images/canvas.png) |
+| --------------------------- | ---------------------- |
+| _GitHub Discussions page_   | _Canvas syllabus page_ |
 
 # Assignments
 
