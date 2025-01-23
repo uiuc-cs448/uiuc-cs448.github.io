@@ -16,6 +16,8 @@ There are _many_ ways to setup a Python environment and dealing with it can be [
 
 ## Global vs. Multiple Environments
 
+> We loosely recommend [this 3rd-party reference](https://realpython.com/effective-python-environment/#python-version-management)).
+
 An environment encapsulates a set of development tools (e.g. a set of dependencies and even a Python version) that you can use for a project, multiple projects, or all projects across your entire OS. Choose between:
 
 - **A global environment**: Every project on your computer shares one Python version and uses the **same set of dependencies**. This is easy to start with but hard to maintain when projects require conflicting versions of dependencies, etc.
