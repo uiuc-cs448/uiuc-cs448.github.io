@@ -2,10 +2,8 @@ name: Onboard students
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0,6,12,16 21-31 1,8 1-5" # Four times per weekday on approximately the start of each semester
-
-permissions: write-all
+  # schedule:
+  #   - cron: "0 0,6,12,16 21-31 1,8 1-5" # Four times per weekday on approximately the start of each semester
 
 jobs:
   sync-team:
@@ -15,7 +13,12 @@ jobs:
         env:
           ORG: ${{ github.repository_owner }}
           TEAM: ${{ vars.STUDENT_TEAM }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api \
-            /orgs/$ORG/outside_collaborators --paginate
+            /orgs/$ORG/outside_collaborators --paginate | \
+          jq -r ".[].login" | \
+            xargs -I {} \
+              gh api \
+                --method PUT \
+                /orgs/$ORG/teams/$TEAM/memberships/{} \
+                -f "role=member"
