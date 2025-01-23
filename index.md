@@ -1,9 +1,9 @@
-> Course website (this) and GitHub are new and still under construction. Please bear with us and notify us of any issues/suggestions.
-
 | [Discussions](https://github.com/orgs/uiuc-cs448/discussions) | [Canvas](https://canvas.illinois.edu/courses/52926) | [Repositories](https://github.com/orgs/uiuc-cs448/repositories) | [Python Setup](https://uiuc-cs448.github.io/python) |
 | ------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------- |
 
-> ℹ️ This website focuses on the **online platforms** of this course to help you onboard. Refer to the syllabus, day-1 lecture slides, announcements, etc. on Canvas for complete coverage on everything else.
+> ℹ️ Course website (this) and GitHub are new and still under construction. Please bear with us and notify us of any issues/suggestions.
+>
+> This website focuses on the **online platforms** of this course to help you onboard. Refer to the syllabus, day-1 lecture slides, announcements, etc. on Canvas for complete coverage on everything else.
 
 Welcome to the website of CS 448 – Audio Computing Laboratory for Spring 2025! Here's a summary of what you'll use:
 
