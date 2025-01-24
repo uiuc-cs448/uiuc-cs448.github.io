@@ -1,0 +1,20 @@
+name: Sync assignments
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync-team:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge PRs from GitHub Classroom Bot
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORG: ${{ github.repository_owner }}
+        run: |
+          gh api \
+            /orgs/$ORG/repos --paginate | \
+            jq -r ".[].name" | \
+            xargs -I {} gh api /repos/$ORG/{}/pulls | \
+            jq -r ".[] | select(.user.login == \"github-classroom[bot]\") .html_url" | \
+            xargs -I {} gh pr merge {} -s
