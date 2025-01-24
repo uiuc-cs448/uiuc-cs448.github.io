@@ -44,8 +44,6 @@ Mac preinstalls a system-dependent version of Python in `/usr/local/bin/`, but w
 
 ### Dependency Environments with a global Python version
 
-> Quinn kinda likes [the RealPython guid](https://realpython.com/effective-python-environment/#python-version-management), but there's plenty of  resources on the internet.
-
 `pyenv`, `conda`, etc. already have their own support for managing Python environments (so skip this if that applies). But if you installed a single Python version via [homebrew](https://formulae.brew.sh/formula/python@3.12), [python.org](https://www.python.org/), etc., use virtual environments ([`venv`](https://docs.python.org/3/library/venv.html)s).
 
 `venv` is built-in with Python and lets you manage multiple environments for dependencies that still **share the same global Python** that you installed earlier. It requires remembering a few commands to activate/open etc. for a project, but you can automate that or opt for `pyenv-virtualenv`, `conda`, etc. which do it for you.
