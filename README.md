@@ -41,3 +41,14 @@ gh api \
     jq -r ".[] | select(.user.login == \"github-classroom[bot]\") .html_url" | \
     xargs -I {} gh pr merge {} -s
 ```
+
+Or, I prefer just syncing the forks from `$SOURCE`:
+
+```bash
+gh api \
+    orgs/$ORG/repos --paginate \
+        | jq ".[].name | select(startswith(\"$SOURCE-$\"))" \
+        | xargs -I {} gh repo sync "$ORG/{}" -s "$ORG/$SOURCE"
+```
+
+Leftover conflicts should error `can't sync because there are diverging changes...`. You should be able to use "Sync assignments" to open PRs and manually resolve.
