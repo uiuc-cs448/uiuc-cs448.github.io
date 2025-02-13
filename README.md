@@ -40,8 +40,8 @@ gh api /orgs/$ORG/repos --paginate \
 
 ```bash
 gh api orgs/$ORG/repos --paginate \
-    | jq ".[].name | select(startswith(\"$SOURCE-$\"))" \
-    | xargs -I {} gh repo sync "$ORG/{}" -s "$ORG/$SOURCE"
+    | jq ".[].name | select(startswith(\"$SOURCE-\"))" \
+    | xargs -I {} sh -c "echo \"Syncing fork {}:\" && gh repo sync \"$ORG/{}\" -s \"$ORG/$SOURCE\""
 ```
 
 Leftover conflicts should error `can't sync because there are diverging changes...`, etc. You should be able to use "Sync assignments" afterwards to open PRs and manually resolve.
