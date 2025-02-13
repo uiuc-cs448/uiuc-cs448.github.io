@@ -7,17 +7,13 @@ jobs:
   sync-team:
     runs-on: ubuntu-latest
     steps:
-      - name: Invite outside collaborator(s) to be a team member
+      - name: Invite students to an organization team
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           ORG: ${{ github.repository_owner }}
-          TEAM: ${{ vars.STUDENT_TEAM }}
+          STUDENT_TEAM: ${{ vars.STUDENT_TEAM }}
         run: |
-          gh api \
-            /orgs/$ORG/outside_collaborators --paginate | \
-          jq -r ".[].login" | \
-          xargs -I {} \
-          gh api \
-            --method PUT \
-            /orgs/$ORG/teams/$TEAM/memberships/{} \
-            -f "role=member"
+          gh api "/orgs/$ORG/outside_collaborators" --paginate \
+            | jq -r ".[].login" \
+            | xargs -I {} \
+                gh api --method PUT "/orgs/$ORG/teams/$STUDENT_TEAM/memberships/{}" -f "role=member"

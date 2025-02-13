@@ -1,4 +1,4 @@
-name: Sync assignments
+name: Sync assignments (sync forks)
 
 on:
   workflow_dispatch:
@@ -7,14 +7,12 @@ jobs:
   sync-team:
     runs-on: ubuntu-latest
     steps:
-      - name: Merge PRs from GitHub Classroom Bot
+      - name: Sync student forks to assignment source
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           ORG: ${{ github.repository_owner }}
+          SOURCE: ${{ vars.SOURCE_SLUG }}
         run: |
-          gh api \
-            /orgs/$ORG/repos --paginate | \
-            jq -r ".[].name" | \
-            xargs -I {} gh api /repos/$ORG/{}/pulls | \
-            jq -r ".[] | select(.user.login == \"github-classroom[bot]\") .html_url" | \
-            xargs -I {} gh pr merge {} -s
+          gh api orgs/$ORG/repos --paginate \
+            | jq ".[].name | select(startswith(\"$SOURCE-$\"))" \
+            | xargs -I {} gh repo sync "$ORG/{}" -s "$ORG/$SOURCE"
