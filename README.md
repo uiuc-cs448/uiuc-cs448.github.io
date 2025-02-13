@@ -4,9 +4,11 @@ Markdown mostly works as expected, beware LaTeX, callouts (via `> [!NOTE]`, etc.
 
 # Utilities
 
-Short [GitHub CLI](https://cli.github.com/manual/) commands to deal with GH Classroom being dumb, which can run locally or remotely as workflows via GH Actions (if applicable).
+Short [GitHub CLI](https://cli.github.com/manual/) commands to deal with GH Classroom being dumb to run locally.
 
-> Workflows use [`$GITHUB_TOKEN`](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication) for authentication but it may not have the right permissions. If not, run locally by copy-pasting the below commands and substituting any [`$` workflow variables](https://github.com/organizations/uiuc-cs448/settings/variables/actions).
+### As workflows
+
+Trying to get these to be manually triggerable workflows on GH Actions. However, they use [`$GITHUB_TOKEN`](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication) for authentication and I haven't set the right permissions. For now, run locally by copy-pasting the below commands and substituting any [`$` workflow variables](https://github.com/organizations/uiuc-cs448/settings/variables/actions).
 > E.g. `ORG=uiuc-cs448`, `STUDENT_TEAM=students`, `SOURCE_SLUG=lab-0`
 
 ## Onboard students to the organization
